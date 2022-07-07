@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IKIRA official website - novels, stories and news">
+    <meta name="keywords" content="IKIRA, ikira, fantasy, thriller, detective, horror, book, novel, free stories">
+    <meta name="author" content="Ruset Andrei">
+    <title>IKIRA | Official website</title>
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="istyle.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!--Logo-->
+            <div class="logo">
+                <a href="index.html"><img src="/images/Studio_Project.png" alt="Logo IKIRA" class="logopic"></a>
+                <p class="logotext">ikira</p>
+            </div>
+            <!-- Navigatie -->
+            <nav>
+                <div class="but">
+                    <a href="romane.html" class="navbut">ROMANE</a>
+                    <img src="/images/buton1.png" alt="" width="85px" height="auto" class="bgd1">
+                </div>
+                <div class="but">
+                    <a href="/despre.html" class="navbut">DESPRE AUTOR</a>
+                    <img src="/images/buton1.png" alt="" width="125px" height="auto" class="bgd2">
+                </div>
+                <!--Dropdown-->
+                <div class="but" id="dbutton">
+                    <a href="#" class="navbut" style="display:block; margin-bottom: 12px;">SOCIAL
+                        MEDIA</a>
+                    <img src="/images/buton1.png" alt="" width="130px" height="auto" class="bgd3">
+                    <div id="drop" class="drop-cont">
+                        <a href="https://www.youtube.com/channel/UC4k3DmXBl7Ij4T4_vzJc52w" target="_blank">Youtube</a>
+                        <a href="https://www.instagram.com/ikira.ro/" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    </div>
+                </div>
+                <div class="but">
+                    <a href="/contact.html" class="navbut">CONTACT</a>
+                    <img src="/images/buton1.png" alt="" width="90px" height="auto" class="bgd1">
+                </div>
+                <!--Navigatie mobil-->
+                <div class="tm-menu">
+                    <img src="/images/hamburger_icon.svg" class="burger" alt="mobile dropdown logo">
+                    <div class="nav-mob">
+                        <a href="romane.html" class="tmbutton">ROMANE</a>
+                        <a href="/despre.html" class="tmbutton">DESPRE</a>
+                        <a href="/contact.html" class="tmbutton">CONTACT</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--Carousel-->
+            <div class="carousel-container">
+                <div class="slide pic1">
+                    <p>Citește noul roman fantasy <br> și află adevărul despre <br>Rai și Iad!</p>
+                    <img src="/images/Urkulen novel.jpg" alt="Urkulen novel cover" class="cover1">
+                </div>
+                <div class="slide pic2">
+                    <p>Un joc misterios<br> care îţi controlează visele?<br> Citește verCAL <br> pentru a afla mai multe!</p>
+                    <img src="/images/verCAL novel.jpg" alt="verCAL novel cover" class="cover2">
+                </div>
+                <div class="slide pic3">
+                    <p> Colecţia de povești horror <br> scrise de Ikira!</p>
+                    <img src="/images/UL novel.jpg" alt="Urban Legends novel cover" class="cover3">
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!--Reviews-->
+            <div class="rev">
+                <a href="https://literaturapetocuri.ro/umbre-de-andrei-ruset-editura-datagroup-recenzie.html"
+                    class="rcard" target="_blank">
+                    <img src="/images/litpetoc.JPG" alt="logo literatura pe tocuri" class="revlogo1">
+                    <p><br>Umbre s-a dovedit un roman surprinzător de bun pentru un debut literar, care mi-a furnizat câteva surprize plăcute.</p>
+                </a>
+                <a href="https://www.mediafax.ro/cultura-media/o-carte-pe-zi/o-carte-pe-zi-umbre-de-andrei-ruset-17516969"
+                    class="rcard" target="_blank">
+                    <img src="/images/mediafax.jpg" alt="logo literatura pe tocuri" class="revlogo2">
+                    <p><br>Umbrelor are ceva din raptul şi călătoria lui Dorothy în ţara dominată de Oz, unde spaime pândesc la tot pasul, dar ai vrea să poposeşti ca prieten invizibil al eroilor pentru a te hrăni live cu minunatele băsmuiri plăsmuite de scriitor.</p>
+                </a>
+                <a href="https://portiadecitit.ro/umbre-andrei-ruset-recenzie/" class="rcard" target="_blank">
+                    <img src="/images/portiadc.JPG" alt="logo literatura pe tocuri" class="revlogo3">
+                    <p><br>Mi s-a părut originală, imaginația autorului fiind debortantă. A reușit să creeze o poveste frumoasă, inedită, care te ține acaparat în paginile ei.</p>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <p>© 2022 Rușeț Andrei. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/dropdown.js"></script>
+</body>
+
+</html>
