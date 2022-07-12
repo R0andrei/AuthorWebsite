@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css-reset.css">
     <link rel="stylesheet" href="istyle.css">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -61,22 +62,26 @@
         </header>
         <main>
             <div class="contact">
-                <form action="" method="post">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="exemplu@gmail.com">
-                    <label for="text">Mesajul tau</label>
-                    <textarea name="contact ikira" id="text" cols="100" rows="10" placeholder="Salut!"></textarea>
-                    <input type="submit" class="send" value="Trimite" >
+                <form name="form" action="#">
+                    <ul>
+                        <li><label for="text">Email*</label></li>
+                        <li><input type="text" name="text" id="text" placeholder="email@exemplu.com"></li>
+                        <li><label for="mesaj">Mesajul tau</label></li>
+                        <li><textarea name="contact ikira" id="mesaj" cols="100" rows="10"
+                                placeholder="Salut!"></textarea></li>
+                        <li><input type="submit" class="send" value="Trimite" onclick="sendMail(document.form.text)">
+                        </li>
+                    </ul>
                 </form>
             </div>
         </main>
         <footer>
-        <p>© 2022 Rușeț Andrei. All Rights Reserved.</p>
+            <p>© 2022 Rușeț Andrei. All Rights Reserved.</p>
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="/dropdown.js"></script>
 </body>
+
 </html>
